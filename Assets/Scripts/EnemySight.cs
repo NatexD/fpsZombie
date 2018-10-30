@@ -1,0 +1,16 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemySight : MonoBehaviour {
+	public GameObject ThePlayer;
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		transform.LookAt (ThePlayer.transform);
+	}
+}
